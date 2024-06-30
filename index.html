@@ -1,15 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="author" content="Anani Sam" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Dynamic Web Fundamentals - Anani Sam</title>
 </head>
 
 <body>
-    <h1>WDD 131 - Anani Sam</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Anani Sam </h1>
+        <nav class="navigation">
+            <a href="www.linkedin.com/in/ananisk" title="LinkedIn">LinkedIn</a>
+            <a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/34?lang=eng&id=p32-p34#p32"
+                title="Scripture">Scripture</a>
+            <a href="#" title="Final Project">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <p>My name is Anani Sam. I was born in Dambai in the Oti Region of Ghana. I spent my childhood at Dambai
+                    with my parents who were into fishing and farming. I now live in Ho in the Volta Region with my wife
+                    and a son. I am a
+                    High School teacher of over eighteen years of experience. I love swimming and love to learn new
+                    things.</p>
+
+                <img class="profile-img" src="images/anani-sam.jpg" alt="Anani Sam's picture">
+            </div>
+            <h3 class="city">Ho, Ghana</h3>
+            <hr>
+
+            <div class="about-ho">
+                <figure>
+                    <img class="scenery" src="images/ho.jpg" alt="A scene of Ho">
+                    <figcaption>A scene of Ho</figcaption>
+                </figure>
+                <p>Ho is the capital city of the Volta Region of Ghana. The city lies
+                    between Mount Adaklu and Mount Galenukui, and is home to a Museum, a cathedral, an airport and at
+                    least, three universities. With a population of over hundred thousand people, the city has a
+                    beautiful scenery.</p>
+            </div>
+
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                <li><a href="https://dev.to/">Dev Community</a></li>
+                <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Anani Sam, Ghana</p>
+
+        <p><span id="lastModified"></span></p>
+
+    </footer>
 </body>
 
 </html>

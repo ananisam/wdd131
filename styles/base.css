@@ -1,0 +1,104 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #bbb;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #36454f;
+
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.card h2 {
+    background-color: #bbb;
+    text-align: center;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-top: -1rem;
+    border: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card {
+    border: 1px solid #36454f;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.about-ho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card ul li {
+    margin: 8px 0;
+}
+
+.profile-img {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+.scenery {
+    width: 200px;
+    height: auto;
+    border: 1px solid var(--image-blue);
+}
+
+figcaption {
+    text-align: center;
+}
+
+.city {
+    text-align: center;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #bbb;
+    text-align: center;
+    padding: 0.5rem;
+}
