@@ -1,0 +1,111 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: white;
+    display: grid;
+}
+
+header {
+    background-color: #36454f;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-weight: 400;
+    padding: 1rem 0 0 1rem;
+    text-align: left;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu::before {
+    content: "≡";
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: wheat;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.navigation.show+h1,
+h1.show {
+    display: none;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.temples {
+    display: grid;
+    padding-bottom: 2rem;
+}
+
+.temples img {
+    height: 30vw;
+}
+
+figcaption {
+    text-align: center;
+    color: #1a2227;
+}
+
+footer {
+    background-color: #1a2227;
+    padding: 0.5rem;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}

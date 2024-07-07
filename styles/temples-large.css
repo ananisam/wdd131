@@ -1,0 +1,38 @@
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body {
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: left;
+        padding: 0 0 0 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        padding-right: 2rem;
+    }
+
+    .navigation li {
+        display: flex;
+        flex: 0 0 auto;
+    }
+
+    .temples {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .temples img {
+        height: 15vw;
+    }
+}
