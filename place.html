@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anani Sam">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - A web page about Ghana">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Ghana</title>
+</head>
+
+<body>
+    <header>
+        <h1>GHANA</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/ghana-independence-square.webp" media="(min-width: 1000px)" width="1200"
+                    height="900">
+                <img src="images/freedom-and-justice.webp" alt="Black Star Saquare in Accra, Ghana" width="490"
+                    height="650">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <h3>Area:</h3>
+            <p>239,567 sq km</p>
+            <h3>Population:</h3>
+            <p>34,792,670</p>
+            <h3>Capital:</h3>
+            <p>Accra</p>
+            <h3>Languages:</h3>
+            <p>English, Ewe, Twi</p>
+            <h3>Currency:</h3>
+            <p>Ghana Cedi</p>
+            <h3>Time Zone:</h3>
+            <p>UTC +00:00</p>
+            <h3>Calling Code:</h3>
+            <p>+233</p>
+            <h3>Internet TLD:</h3>
+            <p>.gh</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="icon">
+                <img class="icon-image" src="images/weather-icon.svg" alt="weather icon" width="100" height="100">
+            </div>
+            <h3>Temperature:</h3>
+            <p><span id="temperature"></span>°C</p>
+            <h3>Conditions:</h3>
+            <p><span id="condition"></span></p>
+            <h3>Wind:</h3>
+            <p><span id="wind"></span> km/h</p>
+            <h3>Windchill:</h3>
+            <p><span id="windchill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Anani Sam, Ghana</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

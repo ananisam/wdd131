@@ -1,0 +1,59 @@
+@media (min-width: 1000px) {
+    :root {
+        --backgrnd-transparent: hsl(0 0% 100% / 0.548);
+        --gold: gold;
+        --red: red;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "☀️";
+        padding-left: 1rem;
+    }
+
+    picture img {
+        background-position: center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .data {
+        position: absolute;
+        padding: 0;
+        top: 60%;
+        left: 16%;
+        transform: translate(-50%, -50%);
+        border-bottom: none;
+    }
+
+    .weather {
+        position: absolute;
+        top: 102%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+    }
+
+    .data,
+    .weather {
+        background-color: var(--backgrnd-transparent);
+        height: fit-content;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0;
+    }
+
+    section h2:nth-child(1) {
+        background-color: var(--red);
+        width: 20rem;
+        margin-left: -1.2rem;
+        color: white;
+        text-align: left;
+    }
+}
