@@ -1,10 +1,4 @@
 @media (min-width: 1000px) {
-    :root {
-        --backgrnd-transparent: hsl(0 0% 100% / 0.548);
-        --gold: gold;
-        --red: red;
-    }
-
     .icon {
         display: none;
     }
@@ -22,6 +16,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-bottom: none;
     }
 
     .data {
@@ -42,7 +37,7 @@
 
     .data,
     .weather {
-        background-color: var(--backgrnd-transparent);
+        background-color: hsl(0 0% 100% / 0.548);
         height: fit-content;
         padding-top: 1rem;
         padding-right: 1rem;
@@ -50,7 +45,7 @@
     }
 
     section h2:nth-child(1) {
-        background-color: var(--red);
+        background-color: green;
         width: 20rem;
         margin-left: -1.2rem;
         color: white;

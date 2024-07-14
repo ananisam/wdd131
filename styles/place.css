@@ -1,15 +1,9 @@
-:root {
-    --gold: gold;
-    --red: #E91829;
-    --roboto: "Roboto", sans-serif;
-}
-
 body,
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--roboto);
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -27,7 +21,7 @@ header h1 {
 }
 
 picture img {
-    border-bottom: 0.4rem solid var(--red);
+    border-bottom: 0.4rem solid red;
     width: 100%;
     height: auto;
 }
