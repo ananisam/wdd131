@@ -1,0 +1,155 @@
+:root {
+    --background1: #36454f;
+    --background2: #d3d3d3;
+    --border: #969696;
+    --items: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header,
+footer {
+    color: white;
+    background-color: var(--background1);
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+form {
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    background-color: var(--background2);
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.group {
+    margin-bottom: 1rem;
+}
+
+/* stars */
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: var(--items);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars>label {
+    color: orange;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: var(--items);
+    /* remove blinking cursor*/
+}
+
+.stars>label:hover {
+    color: var(--items);
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+}
+
+label,
+.group p {
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="checkbox"],
+input[type="date"],
+input[type="radio"],
+textarea,
+select {
+    margin-top: .25rem;
+    padding: .5rem;
+    border: 1px solid var(--border);
+    width: 100%;
+}
+
+input:focus {
+    outline: 1px solid #999;
+}
+
+input[type="checkbox"],
+[type="radio"] {
+    width: 25px;
+    height: 25px;
+}
+
+input[type="submit"] {
+    font-weight: 700;
+    font-size: larger;
+    width: 100%;
+    padding: .5rem;
+}
+
+textarea {
+    height: 7rem;
+}
+
+.radio-group {
+    margin-top: .25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    width: max-content;
+}
+
+.checkbox-group label {
+    margin-left: .5rem;
+}
+
+.optional-text {
+    font-size: .7rem;
+    color: navy;
+}
+
+.review-page {
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media (min-width: 600px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+}

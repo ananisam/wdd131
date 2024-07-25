@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anani Sam">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Product Review Form">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Product Review Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+
+            <div class="group">
+                <label>Product Name</label>
+                <select id="select-product" name="product" required>
+                    <option value="" disabled selected>Select a Product ... </option>
+                </select>
+            </div>
+
+            <div class="group">
+                <p>Overall Rating</p>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </div>
+
+            <div class="group">
+                <label>Date of Installation
+                    <input type="date" id="install" name="install" required></label>
+            </div>
+
+            <div class="group">
+                <p>Which features did you find useful in the product?<br>
+                    <em>(Check all that apply)</em>
+                </p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="durablility" name="durability" value="durability">
+                    <label for="durablility">Durability</label>
+                    <input type="checkbox" id="ease" name="ease" value="ease">
+                    <label for="ease">Ease of Use</label>
+                    <input type="checkbox" id="performance" name="performance" value="performance">
+                    <label for="performance">Performance</label>
+                    <input type="checkbox" id="design" name="design" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </div>
+
+            <div class="group">
+                <label for="review">Written Review <span class="optional-text">(Optional)</span></label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+
+            <div class="group">
+                <label for="user">Your Name <span class="optional-text">(Optional)</span></label>
+                <input type="text" id="user" name="user">
+            </div>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Anani Sam, Ghana</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
