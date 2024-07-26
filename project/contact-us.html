@@ -9,9 +9,8 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Final Website Project">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style-large.css">
-    <link rel="stylesheet" href="styles/contact-us.css">
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/our-services.js" defer></script>
+    <script src="scripts/feedback.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <title>Gudnex Systems - Contact Us</title>
 </head>
@@ -29,59 +28,64 @@
         </nav>
     </header>
 
-    <main id="contact-us">
-        <h2>Contact US</h2>
-        <p>Call: +233 (024) 267-6159</p>
-        <p>Email: gudnex@gmail.com</p>
-        <p>Location: Adjacent HTU Main Gate, Ho</p>
+    <main>
+        <div class="contacts">
+            <h2>Contact US</h2>
+            <p>Call: +233 (024) 267-6159</p>
+            <p>Email: gudnex@gmail.com</p>
+            <p>Location: Adjacent HTU Main Gate, Ho</p>
+        </div>
 
-        <h3>Review Our Services</h3>
+        <div class="review-services">
+            <h3>Review Our Services</h3>
 
-        <form action="message.html" method="get">
+            <form action="feedback.html" method="get">
 
-            <div class="group">
-                <label>Service Name</label>
-                <select id="select-product" name="product" required>
-                    <option value="" disabled selected>Select a Product ... </option>
-                    <option value="service1">Typing</option>
-                    <option value="service2">Photocopying</option>
-                    <option value="service3">Scanning</option>
-                    <option value="service4">Printing</option>
-                    <option value="service5">Lamination</option>
-                    <option value="service6">Photo Printing</option>
-                    <option value="service7">Document Binding</option>
-                </select>
-            </div>
-
-            <div class="group">
-                <p>Overall Rating</p>
-                <div class="stars">
-                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
-                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
-                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
-                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
-                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                <div class="group">
+                    <label>Service Name</label>
+                    <select id="select-product" name="product" required>
+                        <option value="" disabled selected>Select a Service ... </option>
+                        <option value="service1">Typing</option>
+                        <option value="service2">Photocopying</option>
+                        <option value="service3">Scanning</option>
+                        <option value="service4">Printing</option>
+                        <option value="service5">Lamination</option>
+                        <option value="service6">Photo Printing</option>
+                        <option value="service7">Document Binding</option>
+                    </select>
                 </div>
-            </div>
 
-            <div class="group">
-                <label>Date of Service Was Rendered
-                    <input type="date" id="install" name="install" required></label>
-            </div>
+                <div class="group">
+                    <p>Overall Rating</p>
+                    <div class="stars">
+                        <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                        <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                        <input type="radio" id="threestar" name="stars" value="3" required><label
+                            for="threestar"></label>
+                        <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                        <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                    </div>
+                </div>
 
-            <div class="group">
-                <label for="review">Written Review <span class="optional-text">(Optional)</span></label>
-                <textarea id="review" name="review"></textarea>
-            </div>
+                <div class="group">
+                    <label>Date of Service Was Rendered
+                        <input type="date" id="install" name="install" required></label>
+                </div>
 
-            <div class="group">
-                <label for="user">Your Name <span class="optional-text">(Optional)</span></label>
-                <input type="text" id="user" name="user">
-            </div>
+                <div class="group">
+                    <label for="review">Written Review <span class="optional-text">(Optional)</span></label>
+                    <textarea id="review" name="review"></textarea>
+                </div>
 
-            <input type="submit" value="Post Review">
+                <div class="group">
+                    <label for="user">Your Name <span class="optional-text">(Optional)</span></label>
+                    <input type="text" id="user" name="user">
+                </div>
 
-        </form>
+                <input type="submit" value="Post Review">
+
+            </form>
+        </div>
     </main>
 
     <footer>
