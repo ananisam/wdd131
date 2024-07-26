@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anani Sam">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Final Website Project">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>Gudnex Systems - Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gudnex Systems</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="our-services.html" id="our-services">Our Services</a></li>
+                <li><a href="contact-us.html" id="contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Slideshow container. Borrowed from https://www.w3schools.com/ -->
+    <div class="slideshow-container">
+
+        <!-- Full-width banner images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/home-image1.jpg" style="width:100%" alt="home banner image1">
+            <div class="text">Welcome to Gudnex Systems</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/home-image2.jpg" style="width:100%" alt="home banner image2">
+            <div class="text">Excellence, Our Priority</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/home-image3.jpg" style="width:100%" alt="home banner image3">
+            <div class="text">Gudnex Systems</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <main class="home-grid">
+        <div class="home-headline">
+            <h2>Who We Are</h2>
+        </div>
+        <div class="home-maintext">
+            <p>
+                Gudnex Systems is a business located in Ho in the Ho Municipality in the Volta Region
+                of Ghana. For more than seventeen years of professional excellence and experience, we have devoted our
+                time and expertise to building our brand and serving you by providing unparalleled secretarial and IT
+                services that create lasting value for our clients.
+            </p>
+            <p>
+                We are committed to providing excellent professional services to our clients, as we continue to grow. We
+                are delighted as a team as we work daily to bring the best solutions to our clients. We are even more
+                thankful for the partnerships we have with our clients and the useful feedbacks we have received from
+                you.
+            </p>
+            <p>
+                The team therefore appreciate your continuous trust in us as one of Ghana’s leading and trusted
+                secretarial and IT businesses.
+            </p>
+        </div>
+
+        <div class="home-headline">
+            <h2>What We Do</h2>
+        </div>
+        <div class="home-maintext">
+            <p>
+                Our secretarial service includes typing, photocopying, desktop publishing, graphic design and printing.
+                We can carry out range of tasks, such as crafting résumés and typing individual letters. Additionally,
+                we offer a convenient document scanning service which gives you digital copies of your documents.
+            </p>
+            <p>
+                Our IT services include web and software development and IT support services. We have expertise in
+                developing professional-looking website and also developing useful software to serve the needs of our
+                clients. Our IT support services give you solution for any unforeseen technical difficulties.
+            </p>
+            <p>
+                With excellence as our priority, we take pride in providing solutions to our clients with pleasant
+                smiles. You can take a look at our detailed range of services on Our Services page.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Anani Sam, Ghana</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
