@@ -263,7 +263,7 @@ footer p {
 }
 
 .services section {
-    border: 1px solid var(--accent2-color);
+    border: 1px solid var(--primary-color);
     padding: 1rem;
     background-color: #eeeded;
     display: flex;
